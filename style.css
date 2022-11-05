@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 300px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.2rem;
+    border-radius: 20px;
+}
+
+.card-top #main {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+}
+
+.main-image {
+    position: relative;
+}
+
+.card-top .image-hov {
+    position: absolute;
+    top: 0;
+    background-color:hsla(178, 100%, 50%, 50%);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    border-radius: 8px;
+    transition: opacity 0.2s ease;
+}
+
+.card-top .image-hov:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image-hov img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-top h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-top a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.card-top a:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.card-top p {
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 1.3rem;
+}
+
+.payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.eth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    color: hsl(178, 100%, 50%);
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    color: hsl(215, 51%, 70%);
+}
+
+.card-bottom {
+    border-top: 1px solid hsl(215, 32%, 27%);
+    padding-top: 0.8rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: 10px;
+}
+
+.card-bottom img {
+    width: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.card-bottom p {
+    display: inline-block;
+    color: hsl(215, 51%, 70%);
+}
+
+.card-bottom a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.card-bottom a:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
